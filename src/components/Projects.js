@@ -62,12 +62,27 @@ export default function Projects() {
     },
   ];
 
-  const openGallery = (p) => {
-    if (!p.images) return;
-    const slides = p.images.map(img => ({ src: img }));
-    setSlides(slides);
-    setOpen(true);
-  };
+  const openGallery = (project) => {
+  const s = project.images.map((img, idx) => ({
+    src: img,
+    alt: `${project.title} screenshot ${idx + 1}`,
+  }));
+
+  setSlides(s);
+  
+  // Add history entry to prevent exiting the site on back button
+  window.history.pushState({ lightbox: true }, "");
+
+  setOpen(true);
+};
+
+// Close listener for browser back button
+window.onpopstate = () => {
+  if (open) {
+    setOpen(false);
+  }
+};
+
 
   return (
     <section id="projects" style={{ marginTop: 18 }}>
