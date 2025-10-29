@@ -42,3 +42,10 @@ p.lead { color:var(--muted); margin:0 0 12px 0; }
   h1 { font-size:22px; }
   .container { margin:16px; }
 }
+.card img {
+  border-radius: 8px;
+  transition: transform 0.25s ease;
+}
+.card:hover img {
+  transform: scale(1.03);
+}
