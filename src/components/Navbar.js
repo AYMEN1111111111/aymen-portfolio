@@ -20,7 +20,7 @@ export default function Navbar({ theme, setTheme, i18n }) {
           <option value="en">EN</option>
           <option value="fr">FR</option>
         </select>
-        <a className="btn" href="mailto:aymen.harrache@example.com">Email</a>
+        <a className="btn" href="mailto:aymen.harrache@gmail.com">Email</a>
       </div>
     </nav>
   );
