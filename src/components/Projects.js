@@ -11,6 +11,13 @@ import tour1 from "../assets/projects/touraliz/1.jpg";
 import tour2 from "../assets/projects/touraliz/2.jpg";
 import tour3 from "../assets/projects/touraliz/3.jpg";
 import tour4 from "../assets/projects/touraliz/4.jpg";
+// monitoring images 
+// import images for Patient Monitoring
+import mon1 from "../assets/projects/monitoring/1.jpg";
+import mon2 from "../assets/projects/monitoring/2.jpg";
+import mon3 from "../assets/projects/monitoring/3.jpg";
+import mon4 from "../assets/projects/monitoring/4.jpg";
+
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -51,6 +58,7 @@ export default function Projects() {
       desc: "Prototype for patient monitoring and alerts.",
       demo: "#",
       code: "#",
+        images: [mon1, mon2, mon3 ,mon4 ],
     },
   ];
 
